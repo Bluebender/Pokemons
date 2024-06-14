@@ -1,0 +1,14 @@
+<h2>Liste des pokemons</h2>
+<p>{{pokemonLenght}} pokémon(s) en base de donnée</p>
+<ul>
+  <li *ngFor="let element of pokemons">
+    <h3>{{element.name}}</h3>
+    <p>Catégorie : {{element.category}}</p>
+    <p>Type : &nbsp;
+      <span *ngFor="let type of element.type">{{type}},&nbsp;</span>
+    </p>
+    <p>Poids : {{element.weight}} kilos</p>
+    <p *ngIf="element.height">Taille : {{element.height}} mètres</p>
+    <p *ngIf="!element.height">Taille : N/A</p>
+  </li>
+</ul>

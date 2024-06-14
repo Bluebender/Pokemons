@@ -1,0 +1,6 @@
+h2{
+  @apply text-4xl flex justify-center bg-blue-100 p-4 text-blue-950
+}
+ul{
+  @apply list-none flex flex-col justify-center m-4 text-blue-950
+}
